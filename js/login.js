@@ -19,17 +19,17 @@ function checkStuff() {
       password.focus();
       return false;
     } else {
-      msg.innerHTML = "";
+      msg.innerHTML = "Invalid your username or password";
     }
   
     // Check if username and password match specific values
     if (username.value === "Alghaniyu" && password.value === "31052007") {
       // Redirect to a specific URL
-      window.location.href = "https://web.alghaniyuquran.repl.co/Murajaah.html";
+      window.location.href = "https://alghaniyuquran.github.io/AlghaniyuQuran/Murajaah.html";
       return false; // prevent the form from submitting (optional)
     } else {
       // Display an error message if login fails
-      msg.innerHTML = "Invalid username or password";
+      msg.innerHTML = "Invalid your username or password";
       return false;
     }
   }
